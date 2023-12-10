@@ -41,3 +41,10 @@
 <br>
 
 ![실행 오류 해결](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNf8BT%2FbtsBGmM3WBB%2FJqE8slSesLFkkRhegd9mkK%2Fimg.png " 실행 오류 해결")
+
+<br>
+🤭 정상 출력됨! 
+<br>
+<br>
+
+![cmd 출력](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxwQIO%2FbtsBDKgXELK%2FOMVQIsQaGqAYLnFRy6fiT0%2Fimg.png "cmd 출력")
