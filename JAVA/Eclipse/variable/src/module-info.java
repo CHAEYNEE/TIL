@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author CHEAYEON
+ *
+ */
+module variable {
+}

@@ -15,6 +15,8 @@
 
 - [Eclipse K&R 들여쓰기 단축키](#eclipse-kr-들여쓰기-단축키)
 
+- [Eclipse 주석 단축키](#eclipse-주석-단축키)
+
 ### cmd에서 자바 파일 컴파일 하는 명령어
 
 -> javac 자바파일이름.java
@@ -61,3 +63,11 @@
 ### Eclipse K&R 들여쓰기 단축키
 
 -> Ctrl + Shift + F
+
+### Eclipse 주석 단축키
+
+블록 주석 처리(/\* \*/) -> Ctrl + Shift + /
+<br>
+블록 주석 해제 -> Ctrl + Shift + \\
+<br>
+한줄 or 블록 주석 처리(//) -> Ctrl + /
