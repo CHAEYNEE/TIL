@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하이퍼링크 태그</title>
+  </head>
+  <body>
+    <h1 id="top">문서 최상단</h1>
+    <!-- 
+        하이퍼링크 태그(<a>)
+            - 문서를 이동할 때 사용하는 태그
+            - <a>태그를 그냥 사용하면 아무런 효과가 없음
+            - href 속성을 넣어야 하이퍼링크 동작
+            - href 속성을 넣어야 효과가 생김(글씨색 파란색 / 밑줄 / 마우스 올린 경우 모양 변경)
+    -->
+    <a>하이퍼링크 태그</a>
+    <br />
+    <a href="./글자태그.html">이걸 클릭하면 글자태그가 열림</a>
+    <!-- 
+        target : href 지정된 파일이 열리는 위치
+        _self : 현재 창을 변경(default 설정)
+        _blank : 새 창을 띄워서 문서 열기
+        _parent : 부모 창에서 문서 열기(부모 창 -> 현재 창을 열어준 창)
+        _top : 최상위 창
+    -->
+    <br />
+    <a href="./목록태그.html" target="_blank">이걸 클릭하면 목록태그가 열림</a>
+    <br />
+    <!--
+        내가 작성하지 않은 외부 문서로 이동 가능
+        외부 사이트로 이동할 때는 http부터 전체 경로를 입력해야 함
+    -->
+    <a href="http://www.naver.com" target="_blank"
+      >이걸 클릭하면 네이버로 이동</a
+    >
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!--
+        문서 내부 이동
+            - 이동하고 싶은 위치의 태그에 id를 부여하고 #id를 통해서 이동 가능
+    -->
+    <a href="#top">맨 위로</a>
+  </body>
+</html>
