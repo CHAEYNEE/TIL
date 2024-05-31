@@ -1,0 +1,80 @@
+/* 일반 구조 선택자 */
+#div1 > p:first-child {
+  background-color: tomato;
+  color: white;
+}
+#div1 > p:last-child {
+  /* 막내가 p태그 아니라서 안먹혀 */
+  background-color: #ffcdff;
+  color: white;
+}
+#div1 > p:nth-child(2n) {
+  background-color: aquamarine;
+  color: white;
+}
+#div1 > p:nth-last-child(2) {
+  background-color: green;
+  color: white;
+}
+
+/* 형태 구조 선택자 */
+#div2 > p:first-of-type {
+  background-color: tomato;
+  color: white;
+}
+#div2 > p:last-of-type {
+  /* div2의 p태그 중 막내 = test5 */
+  background-color: #ffcdff;
+  color: white;
+}
+#div2 > p:nth-of-type(2n) {
+  background-color: aquamarine;
+  color: white;
+}
+#div2 > p:nth-last-of-type(3) {
+  /* p태그 거꾸로 셈 */
+  background-color: #ffa382;
+  color: white;
+}
+
+/* 문자 선택자 */
+#div3 > p::first-line {
+  background-color: aquamarine;
+}
+#div3 > p::selection {
+  background-color: red;
+  color: white;
+}
+
+/* 부정 선택자 */
+#div4 > p:not(:first-child) {
+  /* first-child 빼고 나머지 */
+  background-color: tomato;
+  color: white;
+}
+
+/* 선택자 우선순위 */
+
+.bbb {
+  color: cadetblue;
+}
+#aaa {
+  background-color: coral;
+  color: white;
+}
+/*
+.ul > li {
+  color: chocolate;
+}
+*/
+.li1 {
+  color: darkgreen;
+}
+/* 동등한 상황이면 나중 작성된 것이 적용됨 */
+.li2 {
+  color: deeppink;
+}
+p.ccc {
+  /* 띄어쓰기하면 안돼 */
+  color: plum;
+}
