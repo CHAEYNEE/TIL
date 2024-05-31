@@ -1,0 +1,42 @@
+/* 전체 선택자 
+
+
+* {
+  color: blue;
+}
+
+*/
+
+/* 태그 선택자 */
+pre,
+h2 {
+  color: #dcd0ff;
+}
+
+/* 아이디 선택자 */
+#li3 {
+  color: cadetblue;
+}
+#li1 {
+  color: coral;
+}
+
+/* 클래스 선택자 */
+.li1 {
+  color: hotpink;
+}
+.li2 {
+  color: rgb(211, 196, 255);
+}
+.li3 {
+  color: cornflowerblue;
+}
+.t-red {
+  color: red;
+}
+.t-blue {
+  color: blue;
+}
+.bg {
+  background-color: lightpink;
+}
