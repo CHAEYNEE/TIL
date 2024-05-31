@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2_CSS선택자</title>
+    <link rel="stylesheet" href="css/selector2.css" />
+  </head>
+  <body>
+    <h2>속성 선택자</h2>
+    <p>기본 선택자 뒤에 []를 이용하여 속성과 속성값을 사용하여 선택</p>
+    <pre>선택자[속성이름=속성값]{속성명 : 값}</pre>
+    <div name="name1" class="div-class1">div1</div>
+    <div name="name2" class="div-class2">div2</div>
+    <div name="name3" class="div-class3">div3</div>
+    <div name="name4" class="class-div">div4</div>
+    <hr />
+    <h2>자손 / 후손 선택자</h2>
+    <p>
+      자손 선택자 : 바로 아래 하위요소<br />
+      후손 선택자 : 하위요소 전체
+    </p>
+    <div id="div1">
+      <div>나는 div1의 자손입니다.</div>
+      <h3>나는 div1의 자손입니다.</h3>
+      <ul id="ul1">
+        <li>나는 ul1의 자손이면서 div1의 후손</li>
+        <li>나는 ul1의 자손이면서 div1의 후손</li>
+      </ul>
+      <ul id="ul2">
+        <li>나는 ul2의 자손이면서 div1의 후손</li>
+        <li>나는 ul2의 자손이면서 div1의 후손</li>
+      </ul>
+    </div>
+    <hr />
+    <h2>동위 선택자</h2>
+    <p>동위 관계에서 뒤에 있는 태그를 선택할 때 사용</p>
+    <pre>
+바로 다음요소 선택 : 선택자a + 선택자b{속성:값} / 다음의 모든 태그 선택 선택자a~선택자b{속성:값;}</pre
+    >
+    <div id="div2">
+      <div class="test1">TEST1</div>
+      <div class="test2">TEST2</div>
+      <div class="test3">TEST3</div>
+      <div class="test4">TEST4</div>
+      <div class="test5">TEST5</div>
+    </div>
+    <hr />
+    <h2>반응 선택자</h2>
+    <p>사용자의 움직임에 따라서 달라지는 선택자</p>
+    <pre>
+    사용자가 클릭한 태그 선택자:active{속성 : 값;} / 사용자의 마우스가 요소에 올라간 상태 선택자:hover{속성 : 값;}
+    </pre>
+    <!-- 클릭 시 동작 -->
+    <div class="action-div active-test"></div>
+    <hr />
+    <!-- 마우스 올렸을 시 동작 -->
+    <div class="action-div hover-test"></div>
+    <hr />
+    <h2>상태 선택자</h2>
+    <p>입력 양식의 상태에 따라 선택되는 선택자</p>
+    <pre>input태그 선택자 : 상태 선택자{속성 : 값;}</pre>
+    <input type="checkbox" name="hobby" value="잠자기" />잠자기<br />
+    <input type="checkbox" name="hobby" value="독서" />독서<br />
+
+    <input type="text" name="id" /><br />
+    <input type="text" name="name" readonly /><br />
+    <input type="text" name="phone" disabled /><br />
+
+    <hr />
+    <input type="radio" name="gender" value="m" id="m" /><label for="m"
+      >남자</label
+    >
+    <input type="radio" name="gender" value="f" id="f" /><label for="f"
+      >여자</label
+    >
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
