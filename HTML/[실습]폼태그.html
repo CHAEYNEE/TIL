@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 태그 실습</title>
+  </head>
+  <body>
+    <form action="order.html" method="post">
+      <div>
+        <label for="customerName">고객명 : </label>
+        <input type="text" name="customerName" id="customerName" required />
+      </div>
+      <br />
+      <div>
+        <label for="customerPhone">전화번호 : </label>
+        <input type="text" name="customerPhone" id="customerPhone" required />
+      </div>
+      <br />
+      <div>
+        <label for="customerEmail">E-mail : </label>
+        <input type="email" name="customerEmail" id="customerEmail" required />
+      </div>
+      <br />
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <input type="radio" name="size" value="s" id="small" />
+        <label for="small">Small</label>
+        <br />
+        <br />
+        <input type="radio" name="size" value="m" id="medium" />
+        <label for="medium">Medium</label>
+        <br />
+        <br />
+        <input type="radio" name="size" value="l" id="large" />
+        <label for="large">Large</label>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <input type="checkbox" name="topping" value="베이컨" id="bacon" />
+        <label for="bacon">베이컨</label>
+        <br />
+        <br />
+        <input type="checkbox" name="topping" value="치즈" id="cheese" />
+        <label for="cheese">치즈</label>
+        <br />
+        <br />
+        <input type="checkbox" name="topping" value="양파" id="onion" />
+        <label for="onion">양파</label>
+        <br />
+        <br />
+        <input type="checkbox" name="topping" value="버섯" id="mushroom" />
+        <label for="mushroom">버섯</label>
+      </fieldset>
+      <br />
+      <label for="time">희망 배송 시간 : </label>
+      <input type="time" name="time" id="time" />
+      <br />
+      <br />
+      <label for="reqMsg">배송 시 요청사항 : </label>
+      <textarea name="textarea" id="reqMsg" cols="30" rows="5"></textarea>
+      <br />
+      <br />
+      <input type="submit" value="주문하기" />
+    </form>
+  </body>
+</html>
