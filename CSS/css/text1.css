@@ -1,0 +1,74 @@
+.ff1 {
+  font-family: "궁서체";
+}
+.ff2 {
+  font-family: "고딕체", "궁서체", "바탕체";
+}
+.ff3 {
+  font-family: "없는글꼴1", "없는글꼴2";
+} /* 기본 폰트로 나옴 */
+.webfont1 {
+  font-family: "Gowun Batang", serif;
+}
+
+/* 다운받은 폰트를 등록 */
+@font-face {
+  /* 새 폰트의 이름 */
+  font-family: ns-r;
+  /* 적용할 폰트 파일 위치 */
+  src: url(../Noto_Sans_KR/NotoSansKR-Regular.otf);
+}
+.webfont2 {
+  font-family: ns-r;
+}
+@font-face {
+  font-family: ns-b;
+  src: url(../Noto_Sans_KR/NotoSansKR-Black.otf);
+}
+.webfont3 {
+  font-family: ns-b;
+}
+
+.size1 {
+  font-size: 32px; /* 절대 크기 */
+}
+.size2 {
+  /* em : 태그가 기본적으로 가지고 있는 크기의 배수로 처리하는 단위 */
+  /* rem : 최상위 요소의 크기의 배수로 처리하는 단위 */
+  font-size: 3em;
+}
+
+.fw1 {
+  /* font-weight: 400; */
+  font-weight: normal;
+}
+.fw2 {
+  /* font-weight: 100; */
+  font-weight: lighter;
+}
+.fw3 {
+  /* font-weight: 600; */
+  font-weight: bold;
+}
+.fw4 {
+  /* font-weight: 900; */
+  font-weight: bolder;
+}
+
+.fv {
+  font-variant: small-caps;
+}
+
+.fs1 {
+  font-style: italic;
+}
+.fs2 {
+  font-style: oblique;
+}
+
+.f1 {
+  font: 20px/20px "궁서체";
+}
+.f2 {
+  font: italic bold 15px/30px ns-r;
+}
