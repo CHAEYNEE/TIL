@@ -1,0 +1,145 @@
+.div {
+  width: 200px;
+  height: 200px;
+  border: 10px dashed black;
+  padding: 50px;
+  display: inline-block;
+}
+.d1 {
+  /*padding, border 제외 200px */
+  box-sizing: content-box;
+}
+.d2 {
+  /* padding, border까지 합쳐서 200px */
+  box-sizing: border-box;
+}
+
+.outer {
+  background-color: antiquewhite;
+  position: relative; /* absolute의 기준을 잡아주는 */
+}
+.outer > div {
+  position: absolute;
+}
+.in1 {
+  width: 300px;
+  height: 300px;
+  background-color: lightpink;
+}
+.in2 {
+  width: 200px;
+  height: 200px;
+  background-color: lavender;
+  top: 50px;
+  left: 50px;
+}
+.in3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(157, 185, 221);
+  top: 100px;
+  left: 100px;
+}
+/* 나중에 작성된 것이 위로 올라옴 */
+#fixed {
+  width: 100px;
+  height: 100px;
+  background-color: #fff0ae;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+}
+
+.vi {
+  background-color: black;
+}
+.vi > div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: tomato;
+}
+.vi2 {
+  visibility: hidden; /* 공간은 차지하지만 보이진 않음 display:none은 공간차지도 x*/
+}
+.vi > .vi1 {
+  background-color: rgb(255, 0, 0);
+  opacity: 0.5; /* 품고 있는 애들도 같이 투명해짐 */
+}
+.vi > .vi3 {
+  background-color: rgba(255, 0, 0, 0.5); /* 색상이 투명해지는것 */
+}
+.vi > div > div {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+.z-wrap {
+  position: relative;
+}
+.z-wrap > div {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.z-1 {
+  background-color: rgb(252, 244, 178);
+  z-index: 3;
+}
+.z-2 {
+  background-color: rgb(126, 236, 194);
+  left: 50px;
+  top: 50px;
+  z-index: 10;
+}
+.z-3 {
+  background-color: rgb(168, 188, 255);
+  left: 100px;
+  top: 100px;
+  z-index: 1;
+}
+
+.float {
+  background-color: bisque;
+  /*
+    float을 사용한 요소의 부모는
+    기본적으로 float된 요소의 높이를 찾을 수 없음
+    -> float 이후에 다음 요소가 float된 요소 옆에 배치되어야 하기 때문에
+    float을 전체 화면 구도를위해 사용했다면
+    부모가 float된 요소의 높이값을 찾을 수 있어야 다음 요소가 정상적으로 배치 됨.
+    찾게해주는 방법 float요소의 부모에 overflow: hidden; 적용
+  */
+  overflow: hidden;
+}
+.float > div {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  float: left;
+}
+.clear {
+  /* clear: left;  float한 그대로 쓰면 됨 */
+}
+
+.over {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+.over1 {
+  /* scroll : 공간이 충분해도 스크롤 만듦 */
+  overflow: scroll;
+}
+.over2 {
+  /* auto : 표현하려는 컨텐츠가 넘어가지않으면 기본 사용 -> 넘어가면 그 때 스크롤을 생성 */
+  overflow: auto;
+}
+.over3 {
+  /* hidden : 넘어가면 숨겨버림 */
+  overflow: hidden;
+}
+.over4 {
+  /* visible : 넘어가는대로 보여줌 */
+  overflow: visible;
+}
