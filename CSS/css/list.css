@@ -1,0 +1,27 @@
+.ul1 {
+  list-style-type: disc;
+}
+.ul2 {
+  list-style-type: circle;
+}
+.ul3 {
+  list-style-type: square;
+}
+.ul4 {
+  list-style-type: none;
+}
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+.ul5 {
+  list-style-image: url(../img/kakao.jpg);
+}
+
+.ul6 {
+  list-style-position: inside;
+}
+
+.ul7 {
+  list-style-position: outside;
+}
