@@ -1,0 +1,193 @@
+.div1 {
+  background-color: cornflowerblue;
+  /*
+    블록요소 기준
+    width : 너비를 지정하지않으면 부모 요소 너비의 100% 가져감
+            -> 지정하면 지정한만큼
+    height : 높이를 지정하지않으면 내부 요소들의 높이의 합만큼 가져감
+            -> 지정하면 지정한만큼
+    */
+  width: 500px;
+  height: 300px;
+}
+
+.div2 {
+  width: 1000px;
+  height: 300px;
+  background-color: cornsilk;
+}
+.div3 {
+  background-color: aquamarine;
+  /*
+    width,height 설정 시 단위를 %로 설정하면
+    부모 요소의 너비/높이의 비율로 결정
+  */
+  width: 50%;
+  height: 50%;
+}
+
+.div4 {
+  width: 50%; /* 부모가 body이므로 브라우저가 줄어들면 같이 줄어들어 */
+  background-color: lavender;
+}
+.div5 {
+  width: 50%;
+  height: 500px;
+  background-color: lightpink;
+}
+
+.div6 > * {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+.div7 {
+  display: inline;
+}
+.span1 {
+  display: block;
+}
+.dis {
+  display: inline-block;
+}
+.span3 {
+  display: none;
+}
+
+.div8 {
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+.div8 + .ul1 {
+  display: none;
+}
+.div8:hover {
+  background-color: black;
+  color: white;
+}
+.div8:hover + .ul1 {
+  display: block;
+}
+
+.div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  /* background-color: antiquewhite; */
+}
+
+.b1 {
+  border-top-style: solid;
+  border-left-style: dashed;
+  border-bottom-style: dotted;
+  border-right-style: double;
+
+  border-top-width: 1px;
+  border-left-width: 2px;
+  border-bottom-width: 3px;
+  border-right-width: 4px;
+
+  border-top-color: rgb(255, 245, 156);
+  border-left-color: lightblue;
+  border-bottom-color: lightcoral;
+  border-right-color: lightsalmon;
+}
+.b2 {
+  border-style: groove;
+  border-width: 5px;
+  border-color: lightskyblue;
+}
+.b3 {
+  border-style: outset;
+}
+.b3:active {
+  border-style: inset;
+}
+.b4 {
+  border-style: inset;
+}
+.b5 {
+  border-style: ridge;
+}
+.b6 {
+  border: 5px solid skyblue;
+}
+.b7 {
+  border: 10px dashed lavender;
+}
+.b8 {
+  border: 1px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 40px;
+}
+.b9 {
+  border: 2px dashed lightpink;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.b10 {
+  border: 3px solid lightsalmon;
+  border-radius: 50px;
+}
+.b11 {
+  border: 3px solid lightgreen;
+  box-shadow: 5px 5px 3px 2px rgb(11, 102, 87);
+}
+.b12 {
+  border-style: ridge;
+  box-shadow: 5px 5px 3px 2px gray;
+}
+.b13 {
+  border-style: hidden;
+  box-shadow: 5px 5px 3px 2px gray;
+}
+
+.div-m {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: blanchedalmond;
+}
+.div9 {
+  margin: 100px;
+}
+.div10 {
+  padding: 50px;
+}
+.div11 {
+  margin: 0 auto; /* 남는 마진을 좌우에 */
+  width: 1000px;
+  background-color: rgb(255, 229, 229);
+  text-align: center;
+  padding: 100px 0px;
+}
+/*
+가운데 정렬
+1. display : inline, inline-block
+좌우정렬(해당 요소의 부모에 설정)
+text-align : 내부내용을 전체 너비의 가운데로 배치
+                -> 내부내용(display:inline,inline-block)
+
+상하정렬
+line-height : 행간 높이를 요소의 높이와 동일하게하면 글씨가 가운데로 배치
+
+2. display : block;
+좌우정렬
+남는 마진을 좌우에 똑같이 나눠서 부여
+                -> margin: 0 auto;
+
+상하정렬
+부모 요소의 padding-top, padding-bottom으로 조절
+                -> 부모 요소의 height를 지정하지 않으면 자식 요소들의 높이의 합으로 처리
+                -> 자식 요소의 높이에 위아래 padding으로 간격을 조절 
+*/
+.div12 {
+  width: 50%;
+  height: 100px;
+  background-color: rgb(177, 213, 255);
+  text-align: center;
+  line-height: 100px;
+  margin: 0 auto;
+}
