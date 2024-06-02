@@ -1,0 +1,93 @@
+@font-face {
+  font-family: nn_r;
+  src: url(../Nanum_Gothic/NanumGothic-Regular.ttf);
+}
+@font-face {
+  font-family: nn_b;
+  src: url(../Nanum_Gothic/NanumGothic-Bold.ttf);
+}
+@font-face {
+  font-family: nn_eb;
+  src: url(../Nanum_Gothic/NanumGothic-ExtraBold.ttf);
+}
+/* 기본값 세팅 */
+* {
+  /* 모든 태그에 기본적으로 존재하는 마진, 패딩을 없애는 효과 */
+  margin: 0;
+  padding: 0;
+  /* 모든 태그에 사용하고싶은 기본 폰트 및 색상 지정 */
+  font-family: nn_r;
+  color: #1e1e1e;
+}
+
+/* agree-all-wrap */
+.agree-all-wrap {
+  background-color: #ddd;
+  padding: 50px;
+}
+
+/* agree-wrap */
+.agree-wrap {
+  background-color: #fff;
+  width: 800px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* agree-title */
+.agree-title > h1 {
+  text-align: center;
+  padding: 25px;
+  color: #003399;
+  font-family: nn-eb;
+}
+.agree-title > h3 {
+  text-align: center;
+  padding: 15px;
+  font-family: nn_b;
+}
+
+/* agree-content */
+.agree-content {
+  width: 600px;
+  margin: 0 auto;
+}
+.agree {
+  margin: 25px 0px;
+}
+.agree-name > img {
+  width: 18px;
+}
+.agree-name > span {
+  font-family: nn_b;
+}
+.agree-explain {
+  width: 90%;
+  height: 200px;
+  overflow: auto;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.agree-check {
+  width: 95%;
+  margin: 0 atuo;
+  text-align: right;
+}
+
+/* agree-btn-box */
+.agree-btn-box {
+  text-align: center;
+  padding: 30px;
+}
+.agree-btn-box > button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+  background-color: #003399;
+  color: white;
+}
