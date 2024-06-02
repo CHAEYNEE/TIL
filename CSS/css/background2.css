@@ -1,0 +1,111 @@
+.linear {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+.gra1 {
+  background: linear-gradient(#00f, #fff);
+}
+.gra2 {
+  background: linear-gradient(
+    to right,
+    #00f,
+    #fff
+  ); /* top, bottom. lef, right */
+}
+.gra3 {
+  background: linear-gradient(
+    -45deg,
+    #00f,
+    #fff
+  ); /* 시계방향 기준 반시계는 - 줘도 됨 */
+}
+.gra4 {
+  background: linear-gradient(to right, #00f, #fff 50%, #f00);
+}
+.gra5 {
+  background: linear-gradient(
+    135deg,
+    red,
+    orange 15%,
+    yellow 30%,
+    green 50%,
+    blue 70%,
+    navy 85%,
+    purple
+  );
+}
+.gra6 {
+  background: linear-gradient(to right, #00f, #fff 20%);
+}
+
+.circle {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+}
+.gra7 {
+  background: radial-gradient(#fff, #00f, #f00);
+}
+.gra8 {
+  background: radial-gradient(circle, #fff, #00f, #f00);
+}
+.gra9 {
+  background: -webkit-radial-gradient(30% 40%, circle, #fff, #00f, #f00);
+  background: -o-radial-gradient(30% 40%, circle, #fff, #00f, #f00);
+  background: -moz-radial-gradient(30% 40%, circle, #fff, #00f, #f00);
+  background: -ms-radial-gradient(30% 40%, circle, #fff, #00f, #f00);
+}
+.gra10 {
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle closest-side,
+    #fff,
+    #00f,
+    #f00
+  );
+}
+.gra11 {
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle farthest-side,
+    #fff,
+    #00f,
+    #f00
+  );
+}
+.gra12 {
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle closest-corner,
+    #fff,
+    #00f,
+    #f00
+  );
+}
+.gra13 {
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle farthest-corner,
+    #fff,
+    #00f,
+    #f00
+  );
+}
+
+#test-gra {
+  padding: 20px;
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
