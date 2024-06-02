@@ -1,0 +1,71 @@
+/* header */
+.header {
+  width: 1200px;
+}
+
+/*header-top */
+.header-top {
+  overflow: hidden;
+}
+.logo {
+  float: left;
+  width: 400px;
+  height: 50px;
+}
+.logo > a {
+  font-family: ns-b;
+  font-size: 30px;
+  text-decoration: none;
+  color: #e9e4ff;
+}
+.membership-link {
+  float: right;
+  width: 200px;
+  height: 50px;
+  text-align: right;
+}
+.membership-link > a {
+  line-height: 50px;
+  text-decoration: none;
+  color: #5c5c5c;
+  font-family: ns-r;
+}
+.membership-link > a:hover {
+  text-decoration: underline;
+  color: #ff8686;
+}
+.membership-link > a:first-child {
+  margin-right: 30px;
+}
+
+/* nav */
+.nav {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.nav > ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.nav > ul > li {
+  list-style-type: none;
+  float: left;
+}
+.nav > ul > li > a {
+  width: 200px;
+  height: 50px;
+  font-family: ns-r;
+  text-decoration: none;
+  color: #5c5c5c;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  border-top: 3px solid transparent;
+}
+.nav > ul > li > a:hover {
+  color: #ffbbbb;
+  /* font-wheight: bold; */
+  font-family: ns-b;
+  border-top-color: #ffbbbb;
+}
