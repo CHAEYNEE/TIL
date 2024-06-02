@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[실습]회원가입</title>
+    <link rel="stylesheet" href="css/join.css" />
+  </head>
+  <body>
+    <div class="join-all-wrap">
+      <div class="join-wrap">
+        <div class="join-title">
+          <h1>A-Class</h1>
+          <h3>회원가입</h3>
+        </div>
+        <div class="join-content">
+          <form action="join.html" method="post" autocomplete="off">
+            <div class="join-input-wrap">
+              <div>
+                <label for="id">아이디 <sup>*</sup></label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="mid-input"
+                  name="id"
+                  id="id"
+                  required
+                />
+                <button type="button" class="dup-btn">중복체크</button
+                ><!-- form태그 안에서 쓸 경우 submit 돼 제출의 경우 그냥 써도 되지만 아닐경우 type="button" 줘야함 -->
+              </div>
+            </div>
+            <div class="join-input-wrap">
+              <div>
+                <label for="pw">비밀번호 <sup>*</sup></label>
+              </div>
+              <div>
+                <input type="password" name="pw" id="pw" required />
+              </div>
+            </div>
+            <div class="join-input-wrap">
+              <div>
+                <label for="pwre">비밀번호 확인 <sup>*</sup></label>
+              </div>
+              <div>
+                <input type="password" name="pwre" id="pwre" required />
+              </div>
+            </div>
+            <div class="join-input-wrap">
+              <div>
+                <label for="name">이름 <sup>*</sup></label>
+              </div>
+              <div>
+                <input type="text" name="name" id="name" required />
+              </div>
+            </div>
+            <div class="join-input-wrap">
+              <div>
+                <label>성별</label>
+              </div>
+              <div class="gender-input-wrap">
+                <input type="radio" name="gender" id="m" value="m" />
+                <label for="m">남자</label>
+                <input type="radio" name="gender" id="f" value="f" />
+                <label for="f">여자</label>
+              </div>
+            </div>
+            <div class="join-input-wrap">
+              <div>
+                <label for="email">이메일 <sup>*</sup></label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="short-input"
+                  name="email1"
+                  id="email"
+                  required
+                />
+                <span class="mail-center">@</span>
+                <input type="text" class="short-input" name="email2" />
+                <select class="email-choice">
+                  <option value="">직접입력</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="iei.or.kr">iei.or.kr</option>
+                </select>
+              </div>
+            </div>
+            <div class="join-btn-wrap">
+              <input type="submit" value="회원가입" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
