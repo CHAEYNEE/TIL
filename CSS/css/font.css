@@ -1,0 +1,9 @@
+@font-face {
+  font-family: ns-r;
+  src: url(../Noto_Sans_KR/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+  font-family: ns-b;
+  src: url(../Noto_Sans_KR/NotoSansKR-Black.otf);
+}
