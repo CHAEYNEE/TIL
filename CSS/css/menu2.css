@@ -1,0 +1,62 @@
+.menu2 {
+  width: 600px;
+}
+.menu2 ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.menu2 > ul > li {
+  float: left;
+  background-color: #ffe761;
+}
+.menu2 ul > li {
+  list-style-type: none;
+  width: 150px;
+}
+.menu2 ul > li > a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu2 > ul > li > a {
+  color: #092e20;
+}
+.sub > li > a {
+  background-color: #234f32;
+  color: #ffe761;
+}
+.sub > li:last-child > a {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu2 > ul > li:first-child {
+  border-top-left-radius: 10px;
+}
+.menu2 > ul > li:last-child {
+  border-top-right-radius: 10px;
+}
+.sub {
+  display: none;
+}
+.menu2 > ul > li:hover {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu2 > ul > li:hover > a {
+  background-color: #326342;
+  font-weight: bold;
+  color: #ffe761;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.menu2 > ul > li:hover > a + .sub {
+  display: block;
+}
+.sub > li > a:hover {
+  font-size: 1.2em;
+  font-weight: 900;
+}
