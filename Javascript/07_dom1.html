@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM1</title>
+    <style>
+      #add-zone,
+      #test-zone {
+        border: 3px solid #ccc;
+        padding: 20px;
+      }
+      #hide-btn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <hr />
+    <div id="add-zone"></div>
+    <button onclick="func1();">추가하기</button>
+    <button onclick="func2();">추가하기</button>
+    <hr />
+    <div id="test-zone"></div>
+    <button onclick="func3();">메뉴 추가하기</button>
+    <hr />
+    비밀번호 입력 : <input type="password" id="pw" name="pw" />
+    <button onclick="func4();" id="show-btn">비밀번호 보이기</button>
+    <button onclick="func5();" id="hide-btn">비밀번호 숨기기</button>
+    <hr />
+    <h2 id="h2">테스트 문구</h2>
+    <button onclick="func6()">색 변경하기</button>
+    <hr />
+    <div>
+      <div id="del-div1" class="del-div">삭제용 div1</div>
+      <div id="del-div2" class="del-div">삭제용 div2</div>
+      <div id="del-div3" class="del-div">삭제용 div3</div>
+      <div id="del-div4" class="del-div">삭제용 div4</div>
+      <div id="del-div5" class="del-div">삭제용 div5</div>
+    </div>
+    <button onclick="func7();">div3 삭제하기</button>
+    <button onclick="func8();">div 전체 삭제하기</button>
+    <button id="btn">div5 삭제하기</button>
+    <button onclick="func9();">div5 삭제하기 활성화</button>
+    <button onclick="func10();">div5 삭제하기 비활성화</button>
+    <script src="js/07_dom1.js"></script>
+  </body>
+</html>
