@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* header */
+.header > span {
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 36px;
+  font-weight: 900;
+  display: block;
+}
+
+/* content */
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.input-box {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.input-box > * {
+  box-sizing: border-box;
+  float: left;
+  font-size: 18px;
+}
+.input-box > input {
+  width: 80%;
+  padding: 10px 30px;
+  height: 40px;
+}
+.input-box > button {
+  width: 20%;
+  height: 40px;
+  background: #fbd786;
+  background: -webkit-linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  border: 0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.todolist {
+  list-style-type: none;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.todolist > li {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+}
+.like {
+  width: 20%;
+}
+.like > span {
+  color: #ff4242;
+}
+.todo-text {
+  width: 70%;
+}
+.check-zone {
+  width: 10%;
+  text-align: right;
+}
+.done {
+  color: #4fd3c4;
+}
+.cancel {
+  color: #ff7979;
+}
+.todolist span {
+  cursor: pointer;
+}
