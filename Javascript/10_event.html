@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트</title>
+  </head>
+  <body>
+    <h1>이벤트</h1>
+    <hr />
+    <h3>고전 이벤트 모델 : 요소의 이벤트 속성에 함수를 연결</h3>
+    <h3>인라인 이벤트 모델 : 요소 작성 시 내부에 작성하는 방식</h3>
+    <h3>표준 이벤트 모델 : w3c에서 공식적으로 지정한 이벤트 모델</h3>
+    <button id="btn1">고전 이벤트 모델</button>
+    <button onclick="alert('인라인 이벤트 동작!!');">
+      인라인 이벤트 모델1
+    </button>
+    <button onclick="func1();">인라인 이벤트 모델2</button>
+    <button id="btn2">표준 이벤트 모델</button>
+    <button id="btn3">비교용1</button>
+    <button id="btn4">비교용2</button>
+    <hr />
+    <!-- 
+        기본 이벤트 : 이벤트를 js설정하지 않아도 자동으로 수행되는 이벤트
+        a태그/form submit
+    -->
+    <h3>기본 이벤트 제거</h3>
+    <a id="a" href="javascript:void(0)"
+      ><!-- href 이벤트(페이지 이동) 제거 -->네이버로 이동</a
+    >
+    <hr />
+    <form action="/changePw.html" method="post">
+      <fieldset>
+        <legend>비밀번호 변경</legend>
+        <label for="currPw">현재 비밀번호 : </label>
+        <input type="password" id="currPw" /><br />
+        <label for="newPw">새 비밀번호 : </label>
+        <input type="password" id="newPw" /><br />
+        <label for="newPwRe">새 비밀번호 확인 : </label>
+        <input type="password" id="newPwRe" /><br />
+        <input
+          type="submit"
+          value="비밀번호 변경하기"
+          id="submitBtn"
+          onclick="return changePw();"
+        />
+      </fieldset>
+    </form>
+
+    <hr />
+    <div class="test-div div1">
+      div1
+      <div class="test-div div2">
+        div2
+        <div class="test-div div3">div3</div>
+      </div>
+    </div>
+
+    <div class="div-test" id="div4">클릭</div>
+    <div class="div-test" id="div5">더블클릭</div>
+    <div class="div-test" id="div6">mouseenter/mouseleave</div>
+
+    <hr />
+    아이디 : <input type="text" name="input1" id="input1" />
+    <span id="idChkMsg"></span>
+    <br />
+    비밀번호 : <input type="password" name="input2" id="input2" />
+    <br />
+    비밀번호 확인 : <input type="password" name="input3" id="input3" />
+    <span id="pwChkMsg"></span>
+    <br />
+    <hr />
+    <p>약관동의1111111111</p>
+    <input type="checkbox" name="agree" id="agree1" />
+    <!-- checked 넣어주면 체크 된 상태 됨 -->
+    <label for="agree1">약관동의1</label>
+    <p>약관동의2222222222</p>
+    <input type="checkbox" name="agree" id="agree2" />
+    <label for="agree2">약관동의2</label>
+    <hr />
+    <input type="checkbox" id="allAgree" />
+    <label for="allAgree">약관동의 전체 체크</label>
+    <style>
+      .div-test {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+
+      .test-div {
+        padding: 20px;
+        border: 1px solid black;
+      }
+
+      .div1 {
+        background-color: cadetblue;
+      }
+
+      .div2 {
+        background-color: cornflowerblue;
+      }
+
+      .div3 {
+        background-color: darkolivegreen;
+      }
+    </style>
+
+    <script src="js/10_event.js"></script>
+  </body>
+</html>
