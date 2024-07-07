@@ -5,7 +5,6 @@ public class 짝수의곱 {
             if(i%2 == 0){
                 mul *= i;
             }
-    
         }
         System.out.println("짝수들의 곱 : " + mul);
         }
